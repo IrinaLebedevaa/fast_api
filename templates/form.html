@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link href="../static/css.css" rel="stylesheet">
+    <title>Личностный тест</title>
+</head>
+<body>
+    <div class="header">
+        тест на определение личности
+    </div>
+
+    <div class="background-blobs">
+        <div class="blobbluee"></div>
+        <div class="blobgreen"></div>
+        <div class="blobpurple"></div>
+        <div class="blobblue"></div>
+        <div class="blobgreenn"></div>
+    </div>
+
+    <div class="main">
+        <h1>У тебя больше внутреннего мира<br>или внешнего драйва?</h1>
+        <p class="subtitle">Поймём твою природу — ответь на пару вопросов</p>
+    </div>
+    <div class="form">
+        <form action="/result" method="post">
+            <label>Имя: <input type="text" name="name" required></label><br><br>
+            <label>Сколько часов в день ты проводишь наедине с собой? (примерно среднее значение за неделю) <input type="number" name="alone" min="0" max="20" required></label><br><br>
+            <label>Есть ли у тебя страх сцены? (0-нет страха, 1-страх есть) <input type="number" name="stage_fear" min="0" max="1" required></label><br><br>
+            <label>Сколько раз ты посетил каких-либо мест/мероприятий с большим количеством людей за последнюю неделю? <input type="number" name="social_event" min="0" max="10" required></label><br><br>
+            <label>Как часто ты бываешь на улице? <input type="number" name="going" min="0" max="10" required></label><br><br>
+            <label>Есть ли у тебя усталость после общения? (0-усталости нет, 1-усталость есть, мне необходимо какое-то время на восстановление) <input type="number" name="grained" min="0" max="1" required></label><br><br>
+            <label>Сколько у тебя друзей? <input type="number" name="friends" min="0" max="20" required></label><br><br>
+            <label>Сколько постов в соц сети ты делаешь в среднем за неделю? <input type="number" name="post" min="0" max="15" required></label><br><br>
+            <div class="button">
+                <button type="submit">Получить результаты</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
